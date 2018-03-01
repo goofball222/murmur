@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  murmur:
+    image: goofball222/murmur
+    container_name: murmur
+    ports:
+      - 64738:64738
+      - 64738:64738/udp
+    volumes:
+      - /<DATA_VOLUME>/murmur/cert:/opt/murmur/cert
+      - /<DATA_VOLUME>/murmur/config:/opt/murmur/config
+      - /<DATA_VOLUME>/murmur/data:/opt/murmur/data
+      - /<DATA_VOLUME>/murmur/log:/opt/murmur/log
