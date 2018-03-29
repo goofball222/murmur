@@ -6,7 +6,7 @@
 | Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
 | [latest](https://github.com/goofball222/murmur/blob/master/stable/Dockerfile) | 1.2.19 | Latest stable release | 2018-03-01 |
-| [snapshot](https://github.com/goofball222/murmur/blob/master/snapshot/Dockerfile) | 1.3.0~2717~gb25db3e~snapshot | Latest snapshot release | 2018-03-19 |
+| [snapshot](https://github.com/goofball222/murmur/blob/master/snapshot/Dockerfile) | 1.3.0~2723~g109ddd4~snapshot | Latest snapshot release | 2018-03-28 |
 | [release-1.2.19](https://github.com/goofball222/murmur/releases/tag/1.2.19) | 1.2.19 | Static stable release tag/image | 2018-03-01 |
 
 ---

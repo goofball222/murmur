@@ -1,3 +1,6 @@
+* **2018-03-28:**
+    * Update master:snapshot to 1.3.0~2723~g109ddd4~snapshot - https://wiki.mumble.info/wiki/Main_Page
+---
 * **2018-03-19:**
     * Update master:snapshot to 1.3.0~2717~gb25db3e~snapshot - https://wiki.mumble.info/wiki/Main_Page
 ---
