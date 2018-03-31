@@ -30,7 +30,7 @@ RUN set -x \
     && delgroup ping \
     && addgroup -g $PGID murmur \
     && adduser -D -G murmur -u $PUID murmur \
-    && apk add --no-cache bash \
+    && apk add --no-cache bash shadow \
     && apk add --no-cache --virtual .build-deps curl \
     && curl -sSL https://mumble.info/snapshot/murmur-static_x86-${VERSION}.tar.bz2 -o /tmp/murmur.tar.bz2 \
     && tar -jxv -f /tmp/murmur.tar.bz2 --strip-components=1 -C /opt/murmur \
