@@ -1,3 +1,6 @@
+* **2018-04-05:**
+    * Update master:snapshot to 1.3.0~2729~g2126495~snapshot - https://wiki.mumble.info/wiki/Main_Page
+---
 * **2018-03-31:**
     * Add Alpine "shadow" packge to Dockerfile to support usermod/groupmod in docker-entrypoint.sh for changing process UID/GID.
 ---
