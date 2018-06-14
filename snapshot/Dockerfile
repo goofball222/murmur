@@ -1,12 +1,11 @@
 FROM alpine
-MAINTAINER The Goofball "goofball222@gmail.com"
 
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
 LABEL \
-    org.label-schema.vendor=goofball222 \
+    org.label-schema.vendor="The Goofball - goofball222@gmail.com" \
     org.label-schema.url="https://github.com/goofball222/murmur" \
     org.label-schema.name="Murmur Server" \
     org.label-schema.version=$VERSION \

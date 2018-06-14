@@ -1,3 +1,6 @@
+* **2018-06-14**
+    * Update Dockerfile to remove depreciated "MAINTAINER", move info to LABEL "vendor" value
+---
 * **2018-04-05:**
     * Update master:snapshot to 1.3.0~2729~g2126495~snapshot - https://wiki.mumble.info/wiki/Main_Page
 ---
