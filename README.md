@@ -5,8 +5,8 @@
 ## Docker tags:
 | Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/goofball222/murmur/blob/master/stable/Dockerfile) | 1.2.19 | Latest stable release | 2018-03-01 |
-| [snapshot](https://github.com/goofball222/murmur/blob/master/snapshot/Dockerfile) | 1.3.0~2729~g2126495~snapshot | Latest snapshot release | 2018-04-02 |
+| [latest](https://github.com/goofball222/murmur/blob/master/stable/Dockerfile) | 1.2.19 | Latest stable release | 2018-08-24 |
+| [snapshot](https://github.com/goofball222/murmur/blob/master/snapshot/Dockerfile) | 1.3.0~2729~g2126495~snapshot | Latest snapshot release | 2018-08-24 |
 | [release-1.2.19](https://github.com/goofball222/murmur/releases/tag/1.2.19) | 1.2.19 | Static stable release tag/image | 2018-03-01 |
 
 ---
@@ -25,7 +25,7 @@ This container exposes four volumes:
 * `/opt/murmur/log` - Murmur log for troubleshooting
 
 
-This container exposes one port, both TCP and UDP:
+This container exposes two ports:
 * `64738/tcp` Murmur server TCP port
 * `64738/udp` Murmur server UDP port
 
@@ -41,19 +41,35 @@ $ docker run --name murmur -d \
 
 ---
 
-**Recommended run command line -**
+**Recommended: run via [Docker Compose](https://docs.docker.com/compose/):**
 
-Have the container store the config & logs on a local file-system or in a specific, known data volume (recommended for persistence and troubleshooting):
-
+Have the container store the config & logs on a local file-system or in a specific, known data volume (recommended for persistence and
+ troubleshooting):
+ 
+ 
 ```bash
-$ docker run --name murmur -d \
-    -p 64738:64738/udp -p 64738:64738 \
-    -v /DATA_VOLUME/murmur/cert:/opt/murmur/cert
-    -v /DATA_VOLUME/murmur/config:/opt/murmur/config  \
-    -v /DATA_VOLUME/murmur/data:/opt/murmur/data \
-    -v /DATA_VOLUME/murmur/log:/opt/murmur/log \
-    goofball222/murmur
+
+version: '3'
+
+services:
+  murmur:
+    image: goofball222/murmur
+    container_name: murmur
+    ports:
+      - 64738:64738
+      - 64738:64738/udp
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./cert:/opt/murmur/cert
+      - ./config:/opt/murmur/config
+      - ./data:/opt/murmur/data
+      - ./log:/opt/murmur/log
+    environment:
+      - TZ=UTC
+
 ```
+
+[Example `docker-compose.yml` file](https://raw.githubusercontent.com/goofball222/murmur/master/examples/docker-compose.yml)
 
 ---
 
@@ -65,12 +81,7 @@ $ docker run --name murmur -d \
 | `MURMUR_OPTS` | ***unset*** | Any additional custom run flags for the container murmur.x86 process |
 | `PGID` | ***999*** | Specifies the GID for the container internal murmur group (used for file ownership) |
 | `PUID` | ***999*** | Specifies the UID for the container internal murmur user (used for process and file ownership) |
-
----
-
-**[Docker Compose](https://docs.docker.com/compose/):**
-
-[Example basic `docker-compose.yml` file](https://raw.githubusercontent.com/goofball222/murmur/master/examples/docker-compose.yml)
+| `RUN_CHOWN` | ***true*** | Set to *false* to disable the container automatic `chown` at startup. Speeds up startup process on overlay2 Docker hosts. **NB/IMPORTANT:** It's critical that you insure directory/data permissions on all mapped volumes are correct before disabling this or murmur will not start. |
 
 ---
 

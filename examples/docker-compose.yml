@@ -1,4 +1,4 @@
-version: '2.2'
+version: '3'
 
 services:
   murmur:
@@ -8,7 +8,10 @@ services:
       - 64738:64738
       - 64738:64738/udp
     volumes:
-      - /<DATA_VOLUME>/murmur/cert:/opt/murmur/cert
-      - /<DATA_VOLUME>/murmur/config:/opt/murmur/config
-      - /<DATA_VOLUME>/murmur/data:/opt/murmur/data
-      - /<DATA_VOLUME>/murmur/log:/opt/murmur/log
+      - /etc/localtime:/etc/localtime:ro
+      - ./cert:/opt/murmur/cert
+      - ./config:/opt/murmur/config
+      - ./data:/opt/murmur/data
+      - ./log:/opt/murmur/log
+    environment:
+      - TZ=UTC
