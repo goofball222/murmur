@@ -1,3 +1,6 @@
+* **2018-09-13:**
+    * Update master:snapshot to 1.3.0~2870~gf7221c1~snapshot - https://dl.mumble.info/?C=M;O=D
+---
 * **2018-08-24:**
     * Update Dockerfile
         * Shh, be vewy vewy quiet, I'm hunting errors in the build logs. (Add -q to Dockerfile apk commands)
