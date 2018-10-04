@@ -1,3 +1,6 @@
+* **2018-10-04:**
+    * Update master:snapshot to 1.3.0~2872~gb44b1f2~snapshot - https://dl.mumble.info/?C=M;O=D
+---
 * **2018-09-13:**
     * Update master:snapshot to 1.3.0~2870~gf7221c1~snapshot - https://dl.mumble.info/?C=M;O=D
 ---
