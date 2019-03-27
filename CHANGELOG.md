@@ -1,3 +1,6 @@
+* **2019-03-27:**
+    * Clone master:snapshot to master:rc, update to 1.3.0-rc1 - https://dl.mumble.info/?C=M;O=D
+---
 * **2019-03-14:**
     * Update master:snapshot to 1.3.0~2961~g1ee050a~snapshot - https://dl.mumble.info/?C=M;O=D
 ---
