@@ -20,7 +20,12 @@ ENV \
     MURMUR_OPTS= \
     PGID=999 \
     PUID=999 \
-    RUN_CHOWN=true
+    RUN_CHOWN=true \
+    BASEDIR=/opt/murmur \
+    CERTDIR=/opt/murmur/cert \
+    CONFIGDIR=/opt/murmur/config \
+    DATADIR=/opt/murmur/data \
+    LOGDIR=/opt/murmur/log
 
 WORKDIR /opt/murmur
 
