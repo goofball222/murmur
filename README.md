@@ -36,7 +36,7 @@ This container exposes two ports:
 $ docker run --name murmur -d \
     -p 64738:64738/udp -p 64738:64738 \
     goofball222/murmur
-```  
+```
 
 ---
 
@@ -44,8 +44,8 @@ $ docker run --name murmur -d \
 
 Have the container store the config & logs on a local file-system or in a specific, known data volume (recommended for persistence and
  troubleshooting):
- 
- 
+
+
 ```bash
 
 version: '3'
@@ -81,6 +81,11 @@ services:
 | `PGID` | ***999*** | Specifies the GID for the container internal murmur group (used for file ownership) |
 | `PUID` | ***999*** | Specifies the UID for the container internal murmur user (used for process and file ownership) |
 | `RUN_CHOWN` | ***true*** | Set to *false* to disable the container automatic `chown` at startup. Speeds up startup process on overlay2 Docker hosts. **NB/IMPORTANT:** It's critical that you insure directory/data permissions on all mapped volumes are correct before disabling this or murmur will not start. |
+| `BASEDIR` | ***/opt/murmur*** | Base directory for Murmur |
+| `CERTDIR` | ***/opt/murmur/cert*** | Directory for Murmur SSL certificate files |
+| `CONFIGDIR` | ***/opt/murmur/config*** | Directory for Murmur configuration files |
+| `DATADIR` | ***/opt/murmur/data*** | Directory for Murmur database and other data files |
+| `LOGDIR` | ***/opt/murmur/log*** | Directory for Murmur log for troubleshooting |
 
 ---
 
@@ -88,7 +93,7 @@ services:
 
 1. Map the Docker host cert storage location or volume to the `/opt/murmur/cert` volume exposed by the container
 2. Must contain a PEM format SSL private key corresponding to the SSL certificate to be installed.
-Private key file **MUST** be named `privkey.pem`. 
+Private key file **MUST** be named `privkey.pem`.
 3. Must contain a PEM format SSL certificate file with the full certification chain. LetsEncrypt handles this automatically, other providers may need manual work (https://www.digicert.com/ssl-support/pem-ssl-creation.htm).
 Certificate file **MUST** be named `fullchain.pem`.
 4. Start the container. sslCert and sslKey paths in murmur.ini are updated automatically during startup if SSL certificate files are detected. Status, errors, etc. can be found in the container log, IE: `docker logs <containername>`
