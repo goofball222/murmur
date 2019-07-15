@@ -27,7 +27,7 @@ ENV \
     DATADIR=${BASEDIR}/data \
     LOGDIR=${BASEDIR}/log
 
-WORKDIR ${BASEDIR}
+WORKDIR /opt/murmur
 
 COPY root /
 
