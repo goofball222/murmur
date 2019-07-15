@@ -20,9 +20,14 @@ ENV \
     MURMUR_OPTS= \
     PGID=999 \
     PUID=999 \
-    RUN_CHOWN=true
+    RUN_CHOWN=true \
+    BASEDIR=/opt/murmur \
+    CERTDIR=${BASEDIR}/cert \
+    CONFIGDIR=${BASEDIR}/config \
+    DATADIR=${BASEDIR}/data \
+    LOGDIR=${BASEDIR}/log
 
-WORKDIR /opt/murmur
+WORKDIR ${BASEDIR}
 
 COPY root /
 

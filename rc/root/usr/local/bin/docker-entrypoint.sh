@@ -19,12 +19,6 @@ log() {
 
 log "INFO - Script version ${SCRIPT_VERSION}"
 
-BASEDIR="/opt/murmur"
-CERTDIR=${BASEDIR}/cert
-CONFIGDIR=${BASEDIR}/config
-DATADIR=${BASEDIR}/data
-LOGDIR=${BASEDIR}/log
-
 MURMUR=${BASEDIR}/murmur.x86
 
 MURMUR_OPTS="${MURMUR_OPTS}"
