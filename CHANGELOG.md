@@ -1,3 +1,6 @@
+* **2019-09-08:**
+    * Update stable to 1.3.0 release - https://dl.mumble.info/?C=M;O=D
+---
 * **2019-06-28:**
     * Update rc to 1.3.0-rc2 - https://dl.mumble.info/?C=M;O=D
 ---
