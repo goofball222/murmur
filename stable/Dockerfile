@@ -22,10 +22,10 @@ ENV \
     PUID=999 \
     RUN_CHOWN=true \
     BASEDIR=/opt/murmur \
-    CERTDIR=${BASEDIR}/cert \
-    CONFIGDIR=${BASEDIR}/config \
-    DATADIR=${BASEDIR}/data \
-    LOGDIR=${BASEDIR}/log
+    CERTDIR=/opt/murmur/cert \
+    CONFIGDIR=/opt/murmur/config \
+    DATADIR=/opt/murmur/data \
+    LOGDIR=/opt/murmur/log
 
 WORKDIR /opt/murmur
 
