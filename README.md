@@ -1,17 +1,14 @@
 # Murmur Docker Container
 
-[![Docker Build Status](https://img.shields.io/docker/cloud/build/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Pulls](https://img.shields.io/docker/pulls/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Stars](https://img.shields.io/docker/stars/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![MB Layers](https://images.microbadger.com/badges/image/goofball222/murmur.svg)](https://microbadger.com/images/goofball222/murmur) [![MB Commit](https://images.microbadger.com/badges/commit/goofball222/murmur.svg)](https://microbadger.com/images/goofball222/murmur) [![MB License](https://images.microbadger.com/badges/license/goofball222/murmur.svg)](https://microbadger.com/images/goofball222/murmur)
-
 ## Docker tags:
 | Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/goofball222/murmur/blob/master/stable/Dockerfile) | 1.3.1 | Latest stable release | 2020-06-08 |
-| [1.3.1](https://github.com/goofball222/murmur/releases/tag/1.3.1) | 1.3.1 | Static stable release tag/image | 2020-06-08 |
+| [latest](https://github.com/m0wer/murmur/blob/master/stable/Dockerfile) | 1.3.1 | Latest stable release | 2020-06-16 |
+| [1.3.1](https://github.com/m0wer/murmur/releases/tag/1.3.1) | 1.3.1 | Static stable release tag/image | 2020-06-16 |
 
 ---
 
-* [Recent changes, see: GitHub CHANGELOG.md](https://github.com/goofball222/murmur/blob/master/CHANGELOG.md)
-* [Report any bugs, issues or feature requests on GitHub](https://github.com/goofball222/murmur/issues)
+* [Report any bugs, issues or feature requests on GitHub](https://github.com/m0wer/murmur/issues)
 
 ---
 
@@ -35,7 +32,7 @@ This container exposes two ports:
 ```bash
 $ docker run --name murmur -d \
     -p 64738:64738/udp -p 64738:64738 \
-    goofball222/murmur
+    m0wer/murmur
 ```
 
 ---
@@ -52,7 +49,7 @@ version: '3'
 
 services:
   murmur:
-    image: goofball222/murmur
+    image: m0wer/murmur
     container_name: murmur
     ports:
       - 64738:64738
@@ -68,7 +65,7 @@ services:
 
 ```
 
-[Example `docker-compose.yml` file](https://raw.githubusercontent.com/goofball222/murmur/master/examples/docker-compose.yml)
+[Example `docker-compose.yml` file](https://raw.githubusercontent.com/m0wer/murmur/master/examples/docker-compose.yml)
 
 ---
 
@@ -104,4 +101,5 @@ To revert from a custom cert to a Murmur self-signed certificate: stop the conta
 
 
 [//]: # (Licensed under the Apache 2.0 license)
-[//]: # (Copyright 2018 The Goofball - goofball222@gmail.com)
+[//]: # (Copyright 2018 The Goofball - goofball222@gmail.com and m0wer - m0wer
+[at] autistici [dot] org)
