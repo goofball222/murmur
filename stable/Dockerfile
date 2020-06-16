@@ -5,11 +5,11 @@ ARG VCS_REF
 ARG VERSION
 
 LABEL \
-    org.label-schema.vendor="The Goofball - goofball222@gmail.com" \
-    org.label-schema.url="https://github.com/goofball222/murmur" \
+    org.label-schema.vendor="m0wer - m0wer [at] autistici [dot] org" \
+    org.label-schema.url="https://github.com/m0wer/murmur" \
     org.label-schema.name="Murmur Server" \
     org.label-schema.version=$VERSION \
-    org.label-schema.vcs-url="https://github.com/goofball222/murmur.git" \
+    org.label-schema.vcs-url="https://github.com/m0wer/murmur.git" \
     org.label-schema.vcs-ref=$VCS_REF \
     org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.license="Apache-2.0" \
