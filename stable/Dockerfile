@@ -5,15 +5,14 @@ ARG VCS_REF
 ARG VERSION
 
 LABEL \
-    org.label-schema.vendor="The Goofball - goofball222@gmail.com" \
-    org.label-schema.url="https://github.com/goofball222/murmur" \
-    org.label-schema.name="Murmur Server" \
-    org.label-schema.version=$VERSION \
-    org.label-schema.vcs-url="https://github.com/goofball222/murmur.git" \
-    org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.build-date=$BUILD_DATE \
-    org.label-schema.license="Apache-2.0" \
-    org.label-schema.schema-version="1.0"
+    org.opencontainers.image.vendor="The Goofball - goofball222@gmail.com" \
+    org.opencontainers.image.url="https://github.com/goofball222/murmur" \
+    org.opencontainers.image.title="Murmur (Mumble) Server" \
+    org.opencontainers.image.version=$VERSION \
+    org.opencontainers.image.source="https://github.com/goofball222/murmur.git" \
+    org.opencontainers.image.revision=$VCS_REF \
+    org.opencontainers.image.created=$BUILD_DATE \
+    org.opencontainers.image.licenses="Apache-2.0"
 
 ENV \
     DEBUG=false \
@@ -34,8 +33,8 @@ RUN set -x \
         curl \
     && apk add -q --no-cache \
         bash shadow tzdata \
-    && curl -sSL https://mumble.info/snapshot/murmur-static_x86-${VERSION}.tar.bz2 -o /tmp/murmur.tar.bz2 \
-    && tar -jx -f /tmp/murmur.tar.bz2 --strip-components=1 -C /opt/murmur \
+    && curl -sSL https://dl.mumble.info/stable/murmur-static_x86-${VERSION}.tar.bz2 -o /tmp/murmur-static_x86-${VERSION}.tar.bz2 \
+    && tar -jx -f /tmp/murmur-static_x86-${VERSION}.tar.bz2 --strip-components=1 -C /opt/murmur \
     && bash -c 'mkdir -p {cert,config,data,log}' \
     && mv /opt/murmur/murmur.ini /opt/murmur/murmur.ini-default \
     && chown -R murmur:murmur /opt/murmur \

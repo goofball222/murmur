@@ -1,3 +1,6 @@
+* **2020-07-09:**
+    * Update stable to 1.3.2 release - https://dl.mumble.info/stable/?C=M;O=D - https://github.com/mumble-voip/mumble/releases/tag/1.3.2
+---
 * **2020-06-10:**
     * Update stable to 1.3.1 release - https://dl.mumble.info/?C=M;O=D
 ---
