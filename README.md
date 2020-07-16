@@ -78,6 +78,7 @@ services:
 | :--- | :---: | --- |
 | `DEBUG` | ***false*** | Set to *true* for extra entrypoint script verbosity for debugging |
 | `MURMUR_OPTS` | ***unset*** | Any additional custom run flags for the container murmur.x86 process |
+| `MURMUR_SUPW` | ***unset*** | Used to set/change the superuser password on the command line. **NB/IMPORTANT:** By design Murmur will not fully start or accept connections with the -supw command line option set. Start the container once to change the password, then stop the container and remove the variable. |
 | `PGID` | ***999*** | Specifies the GID for the container internal murmur group (used for file ownership) |
 | `PUID` | ***999*** | Specifies the UID for the container internal murmur user (used for process and file ownership) |
 | `RUN_CHOWN` | ***true*** | Set to *false* to disable the container automatic `chown` at startup. Speeds up startup process on overlay2 Docker hosts. **NB/IMPORTANT:** It's critical that you insure directory/data permissions on all mapped volumes are correct before disabling this or murmur will not start. |
