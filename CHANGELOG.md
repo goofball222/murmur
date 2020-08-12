@@ -1,3 +1,12 @@
+* **2020-07-16:**
+    * Split docker-entrypoint.sh into main script and functions script.
+    * Add MURMUR_SUPW variable to allow for command line superuser password set/change.
+    * Delete rc and snapshot directories
+---
+* **2020-07-09:**
+    * Update stable to 1.3.2 release - https://dl.mumble.info/stable/?C=M;O=D - https://github.com/mumble-voip/mumble/releases/tag/1.3.2
+    * Update Dockerfile label schema
+---
 * **2020-06-10:**
     * Update stable to 1.3.1 release - https://dl.mumble.info/?C=M;O=D
 ---
