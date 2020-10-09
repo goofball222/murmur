@@ -1,3 +1,6 @@
+* **2020-10-05:**
+    * Update stable to 1.3.3 release - https://dl.mumble.info/stable/?C=M;O=D - https://github.com/mumble-voip/mumble/releases/tag/1.3.3
+---
 * **2020-07-16:**
     * Split docker-entrypoint.sh into main script and functions script.
     * Add MURMUR_SUPW variable to allow for command line superuser password set/change.

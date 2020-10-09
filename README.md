@@ -3,8 +3,8 @@
 ## Docker tags:
 | Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/m0wer/murmur/blob/master/stable/Dockerfile) | 1.3.2 | Latest stable release | 2020-07-09 |
-| [1.3.2](https://github.com/m0wer/murmur/releases/tag/1.3.2) | 1.3.2 | Static stable release tag/image | 2020-07-09 |
+| [latest](https://github.com/m0wer/murmur/blob/master/stable/Dockerfile) | 1.3.3 | Latest stable release | 2020-10-05 |
+| [1.3.3](https://github.com/m0wer/murmur/releases/tag/1.3.3) | 1.3.3 | Static stable release tag/image | 2020-10-05 |
 
 ---
 
