@@ -1,12 +1,11 @@
 # Murmur Docker Container
 
-[![Docker Build Status](https://img.shields.io/docker/cloud/build/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Pulls](https://img.shields.io/docker/pulls/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Stars](https://img.shields.io/docker/stars/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![MB Layers](https://images.microbadger.com/badges/image/goofball222/murmur.svg)](https://microbadger.com/images/goofball222/murmur) [![MB Commit](https://images.microbadger.com/badges/commit/goofball222/murmur.svg)](https://microbadger.com/images/goofball222/murmur) [![MB License](https://images.microbadger.com/badges/license/goofball222/murmur.svg)](https://microbadger.com/images/goofball222/murmur)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Pulls](https://img.shields.io/docker/pulls/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Stars](https://img.shields.io/docker/stars/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/)
 
-## Docker tags:
-| Tag | Murmur Version | Description | Release Date |
+| Docker Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/goofball222/murmur/blob/master/stable/Dockerfile) | 1.3.3 | Latest stable release | 2020-10-05 |
-| [1.3.3](https://github.com/goofball222/murmur/releases/tag/1.3.3) | 1.3.3 | Static stable release tag/image | 2020-10-05 |
+| [latest](https://github.com/goofball222/murmur/blob/master/stable/Dockerfile) | 1.3.4 | Latest stable release | 2021-02-10 |
+| [1.3.4](https://github.com/goofball222/murmur/releases/tag/1.3.4) | 1.3.4 | Static stable release tag/image | 2021-02-10 |
 
 ---
 
