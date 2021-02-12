@@ -1,10 +1,9 @@
 # Murmur Docker Container
 
-## Docker tags:
-| Tag | Murmur Version | Description | Release Date |
+| Docker Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/m0wer/murmur/blob/master/stable/Dockerfile) | 1.3.3 | Latest stable release | 2020-10-05 |
-| [1.3.3](https://github.com/m0wer/murmur/releases/tag/1.3.3) | 1.3.3 | Static stable release tag/image | 2020-10-05 |
+| [latest](https://github.com/m0wer/murmur/blob/master/stable/Dockerfile) | 1.3.4 | Latest stable release | 2021-02-10 |
+| [1.3.4](https://github.com/m0wer/murmur/releases/tag/1.3.4) | 1.3.4 | Static stable release tag/image | 2021-02-10 |
 
 ---
 
