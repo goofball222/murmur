@@ -3,8 +3,8 @@
 # docker-entrypoint.sh script for Murmur Docker container
 # License: Apache-2.0
 # Github: https://github.com/goofball222/murmur.git
-SCRIPT_VERSION="1.1.0"
-# Last updated date: 2020-07-16
+SCRIPT_VERSION="1.2.0"
+# Last updated date: 2021-04-11
 
 set -Eeuo pipefail
 
@@ -21,7 +21,7 @@ CONFIGDIR=${BASEDIR}/config
 DATADIR=${BASEDIR}/data
 LOGDIR=${BASEDIR}/log
 
-MURMUR=${BASEDIR}/murmur.x86
+MURMUR=/usr/bin/murmurd
 
 MURMUR_OPTS="${MURMUR_OPTS}"
 

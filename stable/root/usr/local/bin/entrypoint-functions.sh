@@ -3,8 +3,8 @@
 # entrypoint-functions.sh script for Murmur Docker container
 # License: Apache-2.0
 # Github: https://github.com/goofball222/murmur.git
-ENTRYPOINT_FUNCTIONS_VERSION="1.1.0"
-# Last updated date: 2020-07-16
+ENTRYPOINT_FUNCTIONS_VERSION="1.2.0"
+# Last updated date: 2021-04-11
 
 f_chown() {
     if [ "${RUN_CHOWN}" == 'false' ]; then
@@ -41,8 +41,8 @@ f_log() {
 f_setup() {
     f_log "INFO - Insuring murmur.ini setup for container"
     if [ ! -e ${CONFIGDIR}/murmur.ini ]; then
-        f_log "WARN - '${CONFIGDIR}/murmur.ini' doesn't exist, copying from '${BASEDIR}/murmur.ini-default'"
-        cp -p ${BASEDIR}/murmur.ini-default ${CONFIGDIR}/murmur.ini
+        f_log "WARN - '${CONFIGDIR}/murmur.ini' doesn't exist, copying from 'etc/murmur.ini'"
+        cp -p /etc/murmur.ini ${CONFIGDIR}/murmur.ini
     fi
 
     sed -i '/database=/c\database='"${DATADIR}"'/murmur.sqlite' ${CONFIGDIR}/murmur.ini
