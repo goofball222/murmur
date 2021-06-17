@@ -4,12 +4,12 @@
 
 | Docker Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/goofball222/murmur/blob/master/stable/Dockerfile) | 1.3.4 | Latest stable release | 2021-02-10 |
+| [latest](https://github.com/goofball222/murmur/blob/main/stable/Dockerfile) | 1.3.4 | Latest stable release | 2021-02-10 |
 | [1.3.4](https://github.com/goofball222/murmur/releases/tag/1.3.4) | 1.3.4 | Static stable release tag/image | 2021-02-10 |
 
 ---
 
-* [Recent changes, see: GitHub CHANGELOG.md](https://github.com/goofball222/murmur/blob/master/CHANGELOG.md)
+* [Recent changes, see: GitHub CHANGELOG.md](https://github.com/goofball222/murmur/blob/main/CHANGELOG.md)
 * [Report any bugs, issues or feature requests on GitHub](https://github.com/goofball222/murmur/issues)
 
 ---
@@ -67,7 +67,7 @@ services:
 
 ```
 
-[Example `docker-compose.yml` file](https://raw.githubusercontent.com/goofball222/murmur/master/examples/docker-compose.yml)
+[Example `docker-compose.yml` file](https://raw.githubusercontent.com/goofball222/murmur/main/examples/docker-compose.yml)
 
 ---
 
