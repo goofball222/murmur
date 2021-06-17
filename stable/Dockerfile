@@ -8,8 +8,9 @@ LABEL \
     org.opencontainers.image.vendor="The Goofball - goofball222@gmail.com" \
     org.opencontainers.image.url="https://github.com/goofball222/murmur" \
     org.opencontainers.image.title="Murmur (Mumble) Server" \
+    org.opencontainers.image.description="Murmur (Mumble) Server" \
     org.opencontainers.image.version=$VERSION \
-    org.opencontainers.image.source="https://github.com/goofball222/murmur.git" \
+    org.opencontainers.image.source="https://github.com/goofball222/murmur" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE \
     org.opencontainers.image.licenses="Apache-2.0"

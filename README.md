@@ -1,6 +1,6 @@
 # Murmur Docker Container
 
-[![Docker Build Status](https://img.shields.io/docker/cloud/build/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Pulls](https://img.shields.io/docker/pulls/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Stars](https://img.shields.io/docker/stars/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/)
+[![Latest Build Status](https://github.com/goofball222/murmur/actions/workflows/build-latest.yml/badge.svg)](https://github.com/goofball222/murmur/actions/workflows/build-latest.yml) [![Docker Pulls](https://img.shields.io/docker/pulls/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![Docker Stars](https://img.shields.io/docker/stars/goofball222/murmur.svg)](https://hub.docker.com/r/goofball222/murmur/) [![MB License](https://images.microbadger.com/badges/license/goofball222/murmur.svg)](https://microbadger.com/images/goofball222/murmur)
 
 | Docker Tag | Murmur Version | Description | Release Date |
 | --- | :---: | --- | :---: |
