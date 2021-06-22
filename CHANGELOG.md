@@ -1,3 +1,6 @@
+* **2021-06-17:**
+    * Switch to GitHub actions for build
+---
 * **2021-02-10:**
     * Update stable to 1.3.4 release - https://dl.mumble.info/stable/?C=M;O=D - https://github.com/mumble-voip/mumble/releases/tag/1.3.4
 ---
